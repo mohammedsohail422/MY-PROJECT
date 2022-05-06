@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+.navigation-container{
+    display: flex;
+    /* width: 100%; */
+    /* background-color: cadetblue; */
+    padding: 10px 0;
+    text-align: center;
+    height: 50px;
+    /* overflow: hidden; */
+}
+.navigation-container li {
+    list-style: none;
+    width: 10%;
+    padding: 25px;
+}
+.navigation-container{
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-container a {
+    text-decoration: none;
+    text-align: center;
+}
+.logo{
+    margin-top: 10px;
+}
+.navigation-container li ::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #b06337;
+    
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+.navigation-container li :hover::after{
+    width: 80%;
+    background-color: red;
+}
+.box-1, .box-3{
+    display: flex;
+    background-color: #fff5dd;
+    /* width: 100%; */
+    color: #b06337;
+    padding: 10px 0;
+    /* height: 370px; */
+}
+.box-3{
+    padding: 0;
+    justify-content: space-between;
+}
+.box-1, .box-3 {
+    list-style: none;
+}
+.box-1 ul, .box-3 ul{
+    list-style: none;
+    width: 50%;
+    font-size: 30px;
+    padding: 80px 160px;
+}
+.box-3 ul{
+    padding: 10px 160px;
+}
+/* .image1-container{
+    margin-left: 50px;
+} */
+.box-2 ul li,
+.box-1  ul li {
+    color: #b06337;
+    list-style: none;
+}
+.explore{
+    border: 2px solid #b06337 ;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #b06337; 
+}
+.box-2{
+    margin: 40px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.choose-color{
+    padding: 15px 100px;
+    margin: 20px auto;
+    text-align: center;
+}
+.box-2 ul li, .choose-color{
+    color: white;
+
+}
+.choose-color1{
+    background-color: #fbaa89;
+}
+.choose-color2{
+    background-color: #dea56b;
+}
+.choose-color3{
+    background-color: #bad4b7;
+}
+.about-company{
+    font-size: 50px;
+}
+.box-3{
+    background-color: #b06337;
+    height: 380px;
+
+} 
+.box-3 ul li{
+    color: white;
+}
+.box-3 .explore {
+    color: white;
+    border: 2px solid white;
+}
+.about-company{
+    padding: 30px 0;
+}
+.company-detail{
+    font-size: 20px;
+}
+.experience{
+    /* font-weight: 200px; */
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+.four-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 70px;
+    /* height: 50px; */
+}
+.four-images li{
+    list-style: none;
+    
+}
+.navigation-container-bottom{
+    background-color: #fff5dd;
+    padding: 20px;
+}
+box-1 ul li, .lovers-quarrel,
+box-1 ul li, .about-company,
+h1, .experience{
+    font-family: 'Lovers Quarrel', cursive;
+    font-weight: lighter;
+}
+box-1 ul li{
+    font-size: 30px;
+}
+.about-company, 
+.lovers-quarrel,
+.experience {
+    font-size: 60px;
+}

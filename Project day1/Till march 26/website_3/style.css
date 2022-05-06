@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'poppins';
+    color: white;
+}
+
+.hero {
+    background: radial-gradient(47.66% 69.49% at 50% 50%, #424241 0%, #141414 100%);
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo {
+    font-family: 'lobster';
+    font-size: 36px;
+    color: white;
+    background-color: #F54538;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #F54538
+}
+
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #F54538;
+    display: flex;
+    margin: auto;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    transition: 1s;
+}
+
+
+
+.hero_content_left {
+    font-family: 'lobster';
+    font-size: 66px;
+    position: absolute;
+    left: 5%;
+}
+
+.hero_content_center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+.hero_content_right {
+    position: absolute;
+    right: 5%;
+    bottom: 60px;
+}
+
+.hero_content_center img {
+    animation-name: small_movement;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes small_movement {
+    0% {
+        transform: translateX(0px);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

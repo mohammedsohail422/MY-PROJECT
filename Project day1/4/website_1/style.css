@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    transition: 1s;
+    color: #B77F13;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    margin: auto;
+    background-color: #B77F13;
+    display: block;
+}
+
+nav ul li a:hover:after {
+    transition: 1s;
+    width: 100%;
+}
+
+/* hero section styling */
+
+.hero {
+    background-color: #FFF5DD;
+}
+
+.content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big_text {
+    font-family: 'Lovers Quarrel';
+    font-size: 70px;
+    color: #815E44;
+}
+
+.primary_btn {
+    padding: 10px 60px;
+    margin-top: 30px;
+    border: 2px solid #7D3C08;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7D3C08;
+}
+
+.hero_col1 {
+    margin-left: 10%;
+}
+
+.hero_col2 img {
+    display: block;
+    width: 700px;
+    height: 544px;
+    object-fit: cover;
+    object-position: top;
+    float: right;
+}
+
+
+/* about section styling starts here */
+
+.about {
+    background-color: #B06337;
+}
+
+.about_content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    align-items: center;
+
+}
+
+.title {
+    font-family: 'Lovers Quarrel';
+    font-size: 70px;
+    color: white;
+}
+
+.about_col1 p {
+    color: white;
+    padding: 20px 0;
+}
+
+.secondary_btn {
+    padding: 10px 60px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.about_col2 img {
+    display: block;
+    width: 700px;
+    height: 482px;
+    float: right;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* about section styling ends here */
+/* gallery section styling starts here */
+
+.gallery_content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.gallety_title {
+    font-size: 70px;
+    font-family: 'Lovers quarrel';
+    padding-bottom: 80px;
+}
+
+.gallery_imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* gallery section styling ends here */
+/* footer section styling starts here */
+
+footer {
+    background-color: #FFF5DD;
+}
+
+/* footer section styling ends here */

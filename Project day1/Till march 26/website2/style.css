@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(113, 193, 244, 0.4), rgba(113, 193, 244, 0.4)),
+        url(/images/banner_img02.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    margin: auto;
+    height: 2px;
+    background-color: white;
+    display: flex;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    transition: 1s;
+}
+
+.hero_text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.hero_text h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.hero_text p {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.primary_btn {
+    padding: 10px 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+}
+
+/* info section styling  */
+
+.info {
+    margin: -3% 0;
+    z-index: 1;
+}
+
+.info_content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_col1 img {
+    box-shadow: 2px 6px 16px 3px rgba(0, 0, 0, 0.40);
+}
+
+.info_col2 h2 {
+    font-size: 38px;
+    color: #3A8AE9;
+}
+
+.info_col2 p {
+    width: 522px;
+    padding: 40px 0;
+}
+
+.secondary_btn {
+    padding: 10px 50px;
+    border: 2px solid #3A8AE9;
+    background-color: transparent;
+    color: #3A8AE9;
+    font-weight: 700;
+}
+
+/* banner2 styling */
+
+.banner_2 {
+    background-image: linear-gradient(rgba(113, 193, 244, 0.4), rgba(113, 193, 244, 0.4)),
+        url(/images/banner_img01.png);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.banner_2 h1 {
+    font-weight: 900;
+    font-size: 200px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* info section styling */
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.right_align {
+    text-align: right;
+}
+
+/* footer section styling */
+
+footer {
+    background-color: black;
+    height: 180px;
+}
+
+.social {
+    width: 80%;
+    margin: auto;
+}
+
+.social a {
+    padding: 0 20px;
+}

@@ -1,0 +1,4 @@
+var softwareDownload = () => {
+    $(".mentor").show();
+
+}
